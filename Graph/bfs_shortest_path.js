@@ -44,6 +44,11 @@ const shortestPath = (graph, vertex) => {
     pathCount[vertices[i]] = 0;
   }
 
+  // init predescessors
+  for (let i = 0; i < vertices.length; i++) {
+    predescessor[vertices[i]] = null;
+  }
+
   vertColors[vertex] = colors.grey;
   queue.enqueue(vertex);
 
@@ -61,14 +66,17 @@ const shortestPath = (graph, vertex) => {
         vertColors[n] = colors.grey;
         // increment pathCount, the current dequeued vertex + 1
         pathCount[n] = pathCount[v] + 1;
-        // add neighboring vertex onto queue
+        // set predescessor to dequeued vertex
+        predescessor[n] = v;
+        // add neighboring vertex into queue
         queue.enqueue(n);
       }
       // mark vertex as explored
       vertColors[v] = colors.black;
     }
   }
-  return pathCount;
+
+  return { pathCount, predescessor };
 }
 
 console.log(shortestPath(graph, 'a'));
