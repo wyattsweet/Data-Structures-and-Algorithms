@@ -4,8 +4,10 @@
 
 const Graph = require('./AdjacencyList');
 const Queue = require('../Queue');
+const utils = require('./utils')
 
 const graph = new Graph();
+const { initVertColorTracking } = utils
 
 graph.addEdge('a', 'b');
 graph.addEdge('a', 'c');
@@ -16,14 +18,6 @@ graph.addEdge('e', 'i');
 graph.addEdge('c', 'g');
 graph.addEdge('d', 'g');
 graph.addEdge('d', 'h');
-
-const initVertColorTracking = (vertices) => {
-  const colorMapping = {};
-  vertices.forEach((vertex) => {
-    colorMapping[vertex] = 'white';
-  })
-  return colorMapping;
-}
 
 const colors = {
   white: 'white', // vertex hasn't been seen

@@ -6,6 +6,9 @@
 
 const Graph = require('./AdjacencyList');
 const Queue = require('../Queue');
+const utils = require('./utils')
+
+const { initVertColorTracking } = utils
 
 const graph = new Graph();
 
@@ -23,14 +26,6 @@ const colors = {
   white: 'white', // vertex hasn't been seen
   grey: 'grey', // vertex has been seen, but not explored. It's in the queue
   black: 'black' // vertex has been explored
-}
-
-const initVertColorTracking = (vertices) => {
-  const colorMapping = {};
-  vertices.forEach((vertex) => {
-    colorMapping[vertex] = 'white';
-  })
-  return colorMapping;
 }
 
 const breadthFirstSearch = (graph, startVertex, callback) => {

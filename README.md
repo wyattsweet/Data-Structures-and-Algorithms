@@ -76,8 +76,3 @@ The breadth-first search algorithm starts traversing the graph at the specified 
 #### Depth-First Search
 
 In DFS we can store the vertices we come across in a stack. We would explore all adjacent vertices if they are available
-
-
-## Trie
-
-A Trie is a type of search tree often used for storing characters. Each node represents a part of a word. The combined characters in each node represent a word. You know the word is complete because at the end of the path is a flag (usually `*`).
