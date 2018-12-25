@@ -17,7 +17,7 @@ const COLORS = {
 }
 
 
-function depthFirstSearch(graph, cb) {
+function dfs_discovery_time(graph, cb) {
   const vertices = graph.getVertices();
   const adjList = graph.getAdjList();
   const colors = initVertColorTracking(vertices);
@@ -64,4 +64,4 @@ function depthFirstSearchVisit(vert, vertices, adjList, colors, cb, d, f, time) 
   colors[vert] = COLORS.black;
 }
 
-console.log(depthFirstSearch(graph, (v) => console.log(v)))
+module.exports = dfs_discovery_time;

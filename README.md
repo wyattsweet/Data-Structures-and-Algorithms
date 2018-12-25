@@ -2,6 +2,10 @@
 
 Basic description of common programming data structures and algorithms. Examples of each in JavaScript.
 
+## General Terms
+
+* **Topological Sorting** – When a set of tasks or steps need to be executed in a specific order, topological sort orders them in the order they need to be executed. A real world example of this is courses that have pre-requisites, you have to take Drawing I before you can take Drawing II.
+
 ## Binary Search Tree
 
 ### in-order traversal
@@ -76,3 +80,5 @@ The breadth-first search algorithm starts traversing the graph at the specified 
 #### Depth-First Search
 
 In DFS we can store the vertices we come across in a stack. We would explore all adjacent vertices if they are available
+
+

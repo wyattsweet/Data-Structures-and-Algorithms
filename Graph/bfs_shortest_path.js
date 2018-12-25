@@ -2,22 +2,11 @@
 // Also return predescessors for each vertex, or which vertex came before
 // Source Learning JavaScript Dat Structure and Algorithms 3rd edition pg. 300
 
-const Graph = require('./AdjacencyList');
 const Queue = require('../Queue');
 const utils = require('./utils')
 
-const graph = new Graph();
-const { initVertColorTracking } = utils
-
-graph.addEdge('a', 'b');
-graph.addEdge('a', 'c');
-graph.addEdge('a', 'd');
-graph.addEdge('b', 'e');
-graph.addEdge('b', 'f');
-graph.addEdge('e', 'i');
-graph.addEdge('c', 'g');
-graph.addEdge('d', 'g');
-graph.addEdge('d', 'h');
+const { buildGraph, initVertColorTracking } = utils
+const graph = buildGraph();
 
 const colors = {
   white: 'white', // vertex hasn't been seen

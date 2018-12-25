@@ -1,20 +1,9 @@
 const Graph = require('./AdjacencyList')
 const utils = require('./utils')
 
-const { initVertColorTracking } = utils
+const { buildGraph, initVertColorTracking } = utils
 
-const graph = new Graph();
-
-graph.addEdge('a', 'b');
-graph.addEdge('a', 'c');
-graph.addEdge('a', 'd');
-graph.addEdge('b', 'e');
-graph.addEdge('b', 'f');
-graph.addEdge('e', 'i');
-graph.addEdge('c', 'd');
-graph.addEdge('c', 'g');
-graph.addEdge('d', 'g');
-graph.addEdge('d', 'h');
+const graph = buildGraph();
 
 const COLORS = {
   white: 'white', // vertex hasn't been seen

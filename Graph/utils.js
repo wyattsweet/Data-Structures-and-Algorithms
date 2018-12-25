@@ -1,4 +1,4 @@
-const Graph = require('./AdjacencyList')
+const Graph = require('./AdjacencyList');
 
 const initVertColorTracking = (vertices) => {
   const colorMapping = {};

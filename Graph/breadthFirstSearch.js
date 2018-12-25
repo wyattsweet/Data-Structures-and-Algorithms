@@ -4,23 +4,12 @@
 // time complexity: worst case scenario each vertex could have an edge to every other vertex which would make it O(n^2)
 // space complexity: We are storing the graph twice, once for the graph itself and again in vertColors. That would be O(n) 
 
-const Graph = require('./AdjacencyList');
 const Queue = require('../Queue');
 const utils = require('./utils')
 
-const { initVertColorTracking } = utils
+const { buildGraph, initVertColorTracking } = utils
 
-const graph = new Graph();
-
-graph.addEdge('a', 'b');
-graph.addEdge('a', 'c');
-graph.addEdge('a', 'd');
-graph.addEdge('b', 'e');
-graph.addEdge('b', 'f');
-graph.addEdge('e', 'i');
-graph.addEdge('c', 'g');
-graph.addEdge('d', 'g');
-graph.addEdge('d', 'h');
+const graph = buildGraph();
 
 const colors = {
   white: 'white', // vertex hasn't been seen
