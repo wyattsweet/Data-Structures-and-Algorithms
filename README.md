@@ -28,15 +28,17 @@ A graph is composed of a set of vertices and a set of edges connecting the verti
 
 ### Terms
 
-- **vertices** are the individual nodes in a graph
-- Vertices connected by an edge are called **adjacent vertices**.
-- **Degree** – The number of adjacent vertices.
-- **Path** – A sequence of consecutive vertices. Where at each point the vertices are connected by an edge. A simple path does not contain any repeating vertices.
-- **Acyclic graph** doesn't have any cycles. A cycle is if you are able to travel from one vertex to another and back again without taking the same path, or simply a loop.
-- **Connected Graph** There is a path from any one vertex to any other.
-- **Directed Graph** Edges have a direction and you can only move in that direction.
-- **Undirected Graph** You can travel either direction on an edge
-- Graphs can be **unweighted** or **weighted** where edges have a value
+* **vertices** are the individual nodes in a graph
+* Vertices connected by an edge are called **adjacent vertices**.
+* **Degree** – The number of adjacent vertices.
+* **Path** – A sequence of consecutive vertices. Where at each point the vertices are connected by an edge. A simple path does not contain any repeating vertices.
+* **Acyclic graph** doesn't have any cycles. A cycle is if you are able to travel from one vertex to another and back again without taking the same path, or simply a loop.
+* **Connected Graph** There is a path from any one vertex to any other.
+* **Directed Graph** Edges have a direction and you can only move in that direction.
+* **Undirected Graph** You can travel either direction on an edge
+* **unweighted** A graph where the edges don't have value 
+* **weighted** A graph where the edges have values
+* **Directed Acyclic Graph (DAG)** A graph that is directed and acyclic. You can only do topological sort on a DAG graph.
 
 ### Represent a graph
 
@@ -81,4 +83,14 @@ The breadth-first search algorithm starts traversing the graph at the specified 
 
 In DFS we can store the vertices we come across in a stack. We would explore all adjacent vertices if they are available
 
+### Algorithms
 
+#### Dijkstra's Algorithm
+
+In its simplest form Dijkstra's Algorithnm is used to find the shortest path from one node in a graph to another.
+
+**Steps**
+
+1. Mark the distance from the source node to every other node in the graph as infinity to signify those nodes have not yet been visited.
+* 
+*  
