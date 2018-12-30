@@ -1,5 +1,3 @@
-// in this implementation I'm tracking the shortest path to all nodes on a graph from a starting node
-
 // directed weighted adjacency matrix
 const graph = [
   [0, 2, 4, 0, 0, 0],
@@ -10,20 +8,27 @@ const graph = [
   [0, 0, 0, 0, 0, 0]
 ]
 
-// The total path distance will be determined by the sum of the edge values. The shortest path will be the sum with the lowest value.
+// TODO: break the different parts out into seperate functions
 
-function dijkstras(graph, start) {
-  // track the distance and initiate all nodes with a distance of infinity
+function dijkstra(graph, start, end) {
+  // track the shortest distance to each node from the start
   const distance = {};
+  // track which nodes have and have not been visited
   const visited = {};
+  // track the parent node
+  const parent = {};
+
+  // populate distance and visited
   for(let i = 0; i < graph.length; i++) {
     distance[i] = Infinity;
     visited[i] = false;
   }
   
+  // mark distance and visited for the starting node
   distance[start] = 0;
   visited[start] = true;
 
+  // find shortest path to each node
   for (let i = 0; i < graph.length; i++) {
     const edges = graph[i]; // the list of edges for the current node
     const nodeDist = distance[i]; // the shortest distance for the current node
@@ -32,15 +37,27 @@ function dijkstras(graph, start) {
         // console.log(`current node ${i}\n`, `node distance ${nodeDist}\n`, `neighbor node ${index}\n`, `edge value ${edge}`)
         if (!visited[index]) {
           distance[index] = edge + nodeDist;
+          parent[index] = i;
           visited[index] = true;
         }
         if (visited[index] && (edge + nodeDist) < distance[index]) {
           distance[index] = edge + nodeDist;
+          parent[index] = i;
         }
       }
     })
+
   }
-  return distance;
+
+  // figure out the path
+  const path = [];
+  let parentVal = end;
+  path.push(parentVal);
+  while (parentVal !== start) {
+    parentVal = parent[parentVal]
+    path.push(parentVal);
+  }
+  return { distance: distance[end], path: path.reverse() };
 }
 
-console.log(dijkstras(graph, 0))
+console.log(dijkstra(graph, 0, 5)) // { distance: 6, path: ['a', 'b', 'e', 'f'] }

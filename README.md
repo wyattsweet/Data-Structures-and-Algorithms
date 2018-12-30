@@ -87,9 +87,4 @@ In DFS we can store the vertices we come across in a stack. We would explore all
 
 #### Dijkstra's Algorithm
 
-Used to find the shortest path from one node in a graph to another.
-
-**Steps**
-
-1. Mark the distance from the source node to every other node in the graph as infinity to signify those nodes have not yet been visited.
-* 
+Used to find the shortest path from one node to another in a directed weighted graph. The total path distance will be determined by the sum of the edge values. The shortest path will be the sum with the lowest value. 
