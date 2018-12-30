@@ -87,10 +87,9 @@ In DFS we can store the vertices we come across in a stack. We would explore all
 
 #### Dijkstra's Algorithm
 
-In its simplest form Dijkstra's Algorithnm is used to find the shortest path from one node in a graph to another.
+Used to find the shortest path from one node in a graph to another.
 
 **Steps**
 
 1. Mark the distance from the source node to every other node in the graph as infinity to signify those nodes have not yet been visited.
 * 
-*  
