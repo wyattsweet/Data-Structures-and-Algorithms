@@ -1,6 +1,6 @@
 # Algorithm and Data Structures in JavaScript
 
-Basic description of common programming data structures and algorithms. Examples of each in JavaScript.
+This repo contains succinct, straight forward descriptions of common (and not so common) algorithms and data structures. It also contains examples of each, currently in JavaScript.
 
 ## General Terms
 
@@ -39,6 +39,8 @@ A graph is composed of a set of vertices and a set of edges connecting the verti
 * **unweighted** A graph where the edges don't have value 
 * **weighted** A graph where the edges have values
 * **Directed Acyclic Graph (DAG)** A graph that is directed and acyclic. You can only do topological sort on a DAG graph.
+* **negative weight cycle** a cycle with weights that sum to a negative number
+* **Minimum spanning tree (MST)** The subset of a undirected weighted graph with the minimum possible total edge weight. This can solve network design questions such as the island bridge problem. Common algorithms used to find the MST are Prim and Kruskal's algorithms.
 
 ### Represent a graph
 
@@ -96,3 +98,28 @@ Used to find the shortest path from one node to another in a directed weighted g
 * Mark the distance as `0` and visited as true for the starting node
 * Find the shortest path to each node
 * Figure out the shortest node path using the parent object from the start to end
+
+#### Floyd-Warshall Algorithm
+
+A dynamic programming algorithm which finds the shortest path between all pairs of vertices in a weighted graph.
+
+### Prim's Algorithm
+
+A greedy algorithm that finds the MST for a connected weighted undirected graph
+
+**Steps**
+
+1. use an array called `visited` to keep track of the visited nodes.
+* Pick a node (`a`) to start the algorithm and add it to the `visited` list
+* Examine all vertices reachable by `a` and pick the one with the smallest edge (`b`) (greedy)
+* Now examine all the edges reachable by `a` and `b`, pick the smallest one not in the visited list (`c`)
+* Add `c` to the `visited` list.
+* Continue until all vertices have been added to the visited list
+* Return the edge and weight –
+
+```js
+[
+  { edge: ['a', 'b'], weight: 2 },
+  { edge: ['b', 'c'], weight: 2 }
+]
+```
