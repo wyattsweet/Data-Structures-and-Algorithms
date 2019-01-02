@@ -2,6 +2,10 @@
 
 This repo contains succinct, straight forward descriptions of common (and not so common) algorithms and data structures. It also contains examples of each, currently in JavaScript.
 
+## Contents
+
+<!--TOC-->
+
 ## General Terms
 
 * **Topological Sorting** – When a set of tasks or steps need to be executed in a specific order, topological sort orders them in the order they need to be executed. A real world example of this is courses that have pre-requisites, you have to take Drawing I before you can take Drawing II.
@@ -103,7 +107,7 @@ Used to find the shortest path from one node to another in a directed weighted g
 
 A dynamic programming algorithm which finds the shortest path between all pairs of vertices in a weighted graph.
 
-### Prim's Algorithm
+#### Prim's Algorithm
 
 A greedy algorithm that finds the MST for a connected weighted undirected graph
 
@@ -123,3 +127,16 @@ A greedy algorithm that finds the MST for a connected weighted undirected graph
   { edge: ['b', 'c'], weight: 2 }
 ]
 ```
+
+###### resources
+* [https://www.youtube.com/watch?v=cplfcGZmX7I](https://www.youtube.com/watch?v=cplfcGZmX7I)
+
+#### Kruskal's Algorithm
+
+*Todo*
+
+###### resources
+
+* [https://www.youtube.com/watch?v=71UQH7Pr9kU](https://www.youtube.com/watch?v=71UQH7Pr9kU)
+* [https://en.wikipedia.org/wiki/Kruskal%27s_algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
+
