@@ -1,11 +1,9 @@
 // time complexity O(n^2)
 
 function bubbleSort(arr) {
-  let swap = false
 
-  do {
-    swap = false;
-    for (let i = 0; i < arr.length - 1; i++) {
+  for (let x = 0; x < arr.length; x++) {
+    for (let i = 0; i < arr.length - 1 - x; i++) {
       if (arr[i] > arr[i + 1]) {
         swap = true;
         const holder = arr[i];
@@ -13,7 +11,7 @@ function bubbleSort(arr) {
         arr[i + 1] = holder;
       }
     }
-  } while (swap)
+  }
   return arr;
 }
 
