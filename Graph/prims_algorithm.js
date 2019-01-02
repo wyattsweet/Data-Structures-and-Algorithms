@@ -21,9 +21,11 @@ function prim(graph) {
     let pair;
     let pairWeight;
 
-    for (let i = 0; i < visited.length; i++) {
+    const visitedCopy = visited.slice();
+
+    visitedCopy.forEach(vertex => {
       // get the edges of the vertex at i
-      const edges = graph[i];
+      const edges = graph[vertex];
       // lowest weight, grab the first weight in the array greater than 0
       let lowest;
       // vertex, or index of lowest weight edge
@@ -32,10 +34,6 @@ function prim(graph) {
       for (let x = 0; x < edges.length; x++) {
         const value = edges[x];
 
-        // DEBUGGING
-        if (i == 4 && x == 5) {
-          debugger
-        }
 
         if (value > 0 && !visited.includes(x) && (!lowest || value < lowest)) {
           lowest = value;
@@ -44,11 +42,12 @@ function prim(graph) {
       }
 
       if (!pair || lowest < pairWeight) {
-        parent = i;
+        parent = vertex;
         pair = pairIndex;
         pairWeight = lowest;
       }
-    }
+    })
+
     visited.push(pair);
     pairs.push({ edges: [parent, pair], weight: pairWeight })
   }
