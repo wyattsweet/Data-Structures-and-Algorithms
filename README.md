@@ -161,3 +161,7 @@ This is the least complex sorting algorithm to implement but the time complexity
 ### Selection Sort
 
 Find the lowest value in an array and place it in the first position. Find the next smallest value and place it in the next position, so on and so forth until the entire array is sorted.
+
+### Insertion Sort
+
+Compare the value at index `1` to the value in index `0`. If `arr[0] > arr[1]` remove the value at index `1` and insert it into index `0`. Also move the value at index `0` into index `1`. Next move to the value at index `2` and compare it to the value in index `1` making the same comparison until you reach the index `0` again. Continue doing this comparison the entire length of the array. This algorithm run in `O(n²)`
