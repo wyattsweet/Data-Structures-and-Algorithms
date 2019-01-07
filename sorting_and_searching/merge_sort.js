@@ -1,3 +1,4 @@
+// This algorithm runs in O(nlogn)
 
 function mergeSort(arr) {
   if (arr.length < 2) {
