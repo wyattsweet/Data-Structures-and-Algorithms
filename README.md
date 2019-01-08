@@ -168,4 +168,29 @@ Compare the value at index `1` to the value in index `0`. If `arr[0] > arr[1]` r
 
 ### Merge Sort
 
+Merge sort is a divide and conquer style algorithm. 
 
+**procedure**
+
+1. Define the function `mergeSort`
+* create a base case `if (arr.length < 2) { return arr; }`
+* Define a variable `middle` and set it to the approximate middle index of the array 
+* split the array into two arrays at `middle` and call `mergeSort` recursively on each half
+* call another function `merge` with the result
+* `merge` will take the two arrays and return one sorted array
+
+### Quick Sort
+
+Quick sort is also a divide and conquer style algorithm
+
+**procedure**
+
+1. The function `quickSort` takes an array as the argument
+* Make a copy of the array
+* Pick a random index as the pivot point
+* Create a `leftArr` for values lower than the pivot
+* Create a `rightArr` for values greater than the pivot
+* Create a `centerArr` for the pivot and values equal to it
+* iterate through the array and put each value into its proper array based on the value
+* Call `quickSort` on the `left` array and the `right` array and save them to `leftSorted` and `rightSorted`.
+* return an array `[...leftSorted, ...center, ...rightSorted]`
