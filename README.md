@@ -200,7 +200,7 @@ Quick sort is also a divide and conquer style algorithm
 * [https://www.youtube.com/watch?v=XE4VP_8Y0BU](https://www.youtube.com/watch?v=XE4VP_8Y0BU)
 * [https://www.youtube.com/watch?v=Hoixgm4-P4M&t=160s](https://www.youtube.com/watch?v=Hoixgm4-P4M&t=160s)
 
-### The Counting Sort
+### Counting Sort
 
 Counting sort is a **distributed sort**. This algorithm is designed for sorting lists of numbers.
 
@@ -210,4 +210,21 @@ Counting sort is a **distributed sort**. This algorithm is designed for sorting 
   * If the range of numbers is between `0 and 9` create an empty array with 9 indexes `0 - 9`
   * If the range of number is between `0 and 19` create an empty array with 20 indexes `0 - 19`
   * Follow the above pattern of rounding up to the nearest value of 10 based on the input 
-* 
+
+### Bucket Sort
+
+Bucket sort is also a distributed sorting algorithm. You put the values you're sorting into different buckets, then you sort the individual buckets using insertion sort.
+
+**procedure**
+
+1. Create a bucket for each element in the array, the number of elements is `n`.
+* Insert `arr[i]` into `bucket[n * arr[i]]`
+* Sort each bucket
+* Join the elements together into a sorted array
+
+
+## Algorithms
+
+A list of algorithm, code challenge questions.
+
+* Calculate the mean, median, mode and range for a set of numbers.
