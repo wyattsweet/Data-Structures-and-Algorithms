@@ -140,7 +140,7 @@ A greedy algorithm that finds the MST for a connected weighted undirected graph
 * [https://www.youtube.com/watch?v=71UQH7Pr9kU](https://www.youtube.com/watch?v=71UQH7Pr9kU)
 * [https://en.wikipedia.org/wiki/Kruskal%27s_algorithm](https://en.wikipedia.org/wiki/Kruskal%27s_algorithm)
 
-## Sorting and Searching
+## Sorting
 
 These algorithms are extremely common and used to organize sets of data within our applications.
 
@@ -215,16 +215,23 @@ Counting sort is a **distributed sort**. This algorithm is designed for sorting 
 
 Bucket sort is also a distributed sorting algorithm. You put the values you're sorting into different buckets, then you sort the individual buckets using insertion sort.
 
-**procedure**
+**procedure** (incomplete)
 
-1. Create a bucket for each element in the array, the number of elements is `n`.
-* Insert `arr[i]` into `bucket[n * arr[i]]`
+1. create a `bucketSort` function which takes an arr and a bucketSize that defaults to 5. Bucket size is the max number of elements per bucket
+* define the max and min value
+* Use the following formula to find the number of buckets `Math.floor((max - min) / bucketSize) + 1` 
 * Sort each bucket
 * Join the elements together into a sorted array
 
+## Searching
 
-## Algorithms
+### Sequential Search
+
+iterates through an array and looks for the value you are searching for. When it finds it, it returns the value, the index or true. If it doesn't find it, return something else like `false`
+
+## General Algorithms
 
 A list of algorithm, code challenge questions.
 
 * Calculate the mean, median, mode and range for a set of numbers.
+

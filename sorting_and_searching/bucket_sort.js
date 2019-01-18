@@ -1,6 +1,6 @@
 const insertionSort = require('./insertion_sort')
 
-function bucketSort(arr, bucketSize = 2) { // bucketSize is the max number of values per bucket
+function bucketSort(arr, bucketSize = 5) { // bucketSize is the max number of values per bucket
   if (arr.length < 2) {
     return arr;
   }
@@ -19,7 +19,7 @@ function bucketSort(arr, bucketSize = 2) { // bucketSize is the max number of va
   })
 
   let sorted = [];
-  //
+ 
   // sort the buckets
   for (let i = 0; i < buckets.length; i++) {
     sorted = [...sorted, ...insertionSort(buckets[i])];
