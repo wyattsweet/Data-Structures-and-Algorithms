@@ -231,7 +231,23 @@ iterates through an array and looks for the value you are searching for. When it
 
 ## General Algorithms
 
-A list of algorithm, code challenge questions.
+A list of algorithms and interview questions.
+
+### Easy
 
 * Calculate the mean, median, mode and range for a set of numbers.
+* Write a function to test whether a string has balanced parentheses
+* Write a function `isPalindrome` that tests if a input string is a palindrome
+* Find the most frequent integer in an array
+* FizzBuzz
+* Reverse the words in a sentence - “Reverse this sentence.” becomes “sentence this reverse.”
+* Implement a function the finds the factorial of a number
+* In `O(n)` find pairs in an integer array whose sum is equal to 10 – ex: `[2, 5, 3, 8, 5] => 2`
+* Write fibbonaci iteratively and recursively
+* Implement `parseInt`
+* Write a multiply function that multiples 2 integers without using `*`
 
+### Average 
+
+* Write a function which converts roman numerals to actually numbers
+* Write a function that converts numbers to roman numerals
