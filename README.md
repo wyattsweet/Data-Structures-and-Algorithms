@@ -235,9 +235,8 @@ A list of algorithms and interview questions.
 
 ### Easy
 
-* Calculate the mean, median, mode and range for a set of numbers.
-* Write a function to test whether a string has balanced parentheses
-* Write a function `isPalindrome` that tests if a input string is a palindrome
+* [Palindrome Checker](./easyAlgorithms/palindromeChecker)
+* [Balanced Parens] (./easyAlgorithms/balancedParens)
 * Find the most frequent integer in an array
 * FizzBuzz
 * Reverse the words in a sentence - “Reverse this sentence.” becomes “sentence this reverse.”
@@ -246,6 +245,7 @@ A list of algorithms and interview questions.
 * Write fibbonaci iteratively and recursively
 * Implement `parseInt`
 * Write a multiply function that multiples 2 integers without using `*`
+* Calculate the mean, median, mode and range for a set of numbers.
 
 ### Average 
 
