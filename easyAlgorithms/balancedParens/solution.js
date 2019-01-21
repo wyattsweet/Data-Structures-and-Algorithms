@@ -16,3 +16,5 @@ function balancedParens(string) {
   }
   return parensCount === 0 ? true : false;
 }
+
+module.exports = balancedParens;
