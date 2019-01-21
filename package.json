@@ -1,0 +1,12 @@
+{
+  "name": "js_data_structures_and_algorithms",
+  "version": "1.0.0",
+  "description": "This repo contains succinct, straight forward descriptions of common (and not so common) algorithms and data structures. It also contains examples of each, currently in JavaScript.",
+  "main": "BinarySearchTree.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
