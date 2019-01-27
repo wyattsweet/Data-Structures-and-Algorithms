@@ -231,7 +231,7 @@ iterates through an array and looks for the value you are searching for. When it
 
 ## General Algorithms
 
-A list of algorithms and interview questions.
+A list of general algorithms and interview questions which I've loosely broken up by difficulty. 
 
 ### Easy
 
@@ -239,8 +239,7 @@ A list of algorithms and interview questions.
 * [Balanced Parens] (./algorithms/balancedParens)
 * [Most frequent integer](./algorithms/frequentInteger)
 * [FizzBuzz](./algorithms/fizzBuzz)
-* Reverse the words in a sentence - “Reverse this sentence.” becomes “sentence this reverse.”
-* Implement a function the finds the factorial of a number
+* [Factorial](./algorithms/factorial)
 * In `O(n)` find pairs in an integer array whose sum is equal to 10 – ex: `[2, 5, 3, 8, 5] => 2`
 * Write fibbonaci iteratively and recursively
 * Implement `parseInt`
