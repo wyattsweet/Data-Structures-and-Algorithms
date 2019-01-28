@@ -240,7 +240,7 @@ A list of general algorithms and interview questions which I've loosely broken u
 * [Most frequent integer](./algorithms/frequentInteger)
 * [FizzBuzz](./algorithms/fizzBuzz)
 * [Factorial](./algorithms/factorial)
-* In `O(n)` find pairs in an integer array whose sum is equal to 10 – ex: `[2, 5, 3, 8, 5] => 2`
+* [Find the number of pairs whose sum is 10](./algorithms/findSumOf10)
 * Write fibbonaci iteratively and recursively
 * Implement `parseInt`
 * Write a multiply function that multiples 2 integers without using `*`
