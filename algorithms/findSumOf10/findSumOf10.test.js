@@ -13,5 +13,5 @@ test('finds the correct number of pairs', t => {
   t.is(res3, 0);
 
   const res4 = findSumOf10([-10, 20, 11, -1, 30, -20])
-  t.is(res4, 3);
+  t.is(res4, 3)
 })

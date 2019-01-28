@@ -4,7 +4,8 @@
   "description": "This repo contains succinct, straight forward descriptions of common (and not so common) algorithms and data structures. It also contains examples of each, currently in JavaScript.",
   "main": "BinarySearchTree.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "test:watch": "ava --watch"
   },
   "keywords": [],
   "author": "",
