@@ -9,11 +9,38 @@ This repo contains succinct, straight forward descriptions of common (and not so
 ## Data Structures
 
 * [Dictionary](./Dictionary)
+* Linked List
+* Queue
+* Stack
+* Set
 * [Graph](./graph)
+    * Adjacency List
+    * Adjacency Matrix
 * Tree
     * [Binary Search Tree](./tree/binarySearchTree)
 
+## Algorithms
 
+### Uncategorized 
+
+A list of general algorithms and interview questions. 
+
+* [Palindrome Checker](./algorithms/palindromeChecker)
+* [Balanced Parens] (./algorithms/balancedParens)
+* [Most frequent integer](./algorithms/frequentInteger)
+* [FizzBuzz](./algorithms/fizzBuzz)
+* [Factorial](./algorithms/factorial)
+* [Find the number of pairs whose sum is 10](./algorithms/findSumOf10)
+* [Roman Numeral Converter](./algorithms/uncategorized/RomanNumeralConverter)
+
+### Unsolved
+
+* Write a function which converts roman numerals to actually numbers
+* Write a function that converts numbers to roman numerals
+* Write fibbonaci iteratively and recursively
+* Implement `parseInt`
+* Write a multiply function that multiples 2 integers without using `*`
+* Calculate the mean, median, mode and range for a set of numbers.
 ## Sorting
 
 These algorithms are extremely common and used to organize sets of data within our applications.
@@ -103,21 +130,3 @@ Bucket sort is also a distributed sorting algorithm. You put the values you're s
 
 iterates through an array and looks for the value you are searching for. When it finds it, it returns the value, the index or true. If it doesn't find it, return something else like `false`
 
-## Algorithms
-
-### General
-
-A list of general algorithms and interview questions. 
-
-* [Palindrome Checker](./algorithms/palindromeChecker)
-* [Balanced Parens] (./algorithms/balancedParens)
-* [Most frequent integer](./algorithms/frequentInteger)
-* [FizzBuzz](./algorithms/fizzBuzz)
-* [Factorial](./algorithms/factorial)
-* [Find the number of pairs whose sum is 10](./algorithms/findSumOf10)
-* Write fibbonaci iteratively and recursively
-* Implement `parseInt`
-* Write a multiply function that multiples 2 integers without using `*`
-* Calculate the mean, median, mode and range for a set of numbers.
-* Write a function which converts roman numerals to actually numbers
-* Write a function that converts numbers to roman numerals
