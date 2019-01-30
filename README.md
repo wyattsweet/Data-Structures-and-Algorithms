@@ -35,8 +35,7 @@ A list of general algorithms and interview questions.
 
 ### Unsolved
 
-* Write a function which converts roman numerals to actually numbers
-* Write a function that converts numbers to roman numerals
+* [Transposing guitar tabs](https://www.codewars.com/kata/transposing-guitar-tabs?utm_source=newsletter)
 * Write fibbonaci iteratively and recursively
 * Implement `parseInt`
 * Write a multiply function that multiples 2 integers without using `*`
