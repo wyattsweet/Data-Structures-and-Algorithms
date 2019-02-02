@@ -66,7 +66,9 @@ Data structures and algorithms implemented using JavaScript.
 
 ## TODO
 
-- Write tests for all data structures and algorithms
+* Write tests for all data structures and algorithms
+* Write documentation for data structures that don't have it
+
 
 ## Resources
 
