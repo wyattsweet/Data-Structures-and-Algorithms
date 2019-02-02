@@ -21,13 +21,16 @@ This repo contains succinct, straight forward descriptions of common (and not so
 
 ## Algorithms
 
+### Queue
+
+* [Queue using two stacks](./src/algorithms/queue/queueUsingTwoStacks)
+
 ### Graphs
 
 * [Breadth-First Search](./src/algorithms/graph/breadthFirstSearch)
 * [Depth-First Search](./src/algorithms/graph/depthFirstSearch)
 * [Digjstra's Algorithm](./src/algorithms/graph/dijkstrasAlgorithm)
-* Floyd-Warshall Algorithm
-* Prim's Algorithm
+* [Prim's Algorithm](./src/algorithms/graph/primsAlgorithm)
 
 ### Sorting
 * [Bubble Sort](./src/algorithms/sorting/BubbleSort)
