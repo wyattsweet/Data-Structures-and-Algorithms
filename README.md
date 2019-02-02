@@ -17,7 +17,7 @@ Data structures and algorithms implemented using JavaScript.
     * Adjacency List
     * Adjacency Matrix
 * Tree
-    * [Binary Search Tree](/tree/binarySearchTree)
+    * [Binary Search Tree](src/dataStructures/Tree/binarySearchTree)
 
 ## Algorithms
 
