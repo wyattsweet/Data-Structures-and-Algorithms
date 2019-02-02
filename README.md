@@ -23,9 +23,9 @@ This repo contains succinct, straight forward descriptions of common (and not so
 
 ### Graphs
 
-* Breadth-First Search
-* Depth-First Search
-* Digjstra's Algorithm
+* [Breadth-First Search](./src/algorithms/graph/breadthFirstSearch)
+* [Depth-First Search](./src/algorithms/graph/depthFirstSearch)
+* [Digjstra's Algorithm](./src/algorithms/graph/dijkstrasAlgorithm)
 * Floyd-Warshall Algorithm
 * Prim's Algorithm
 
@@ -62,3 +62,6 @@ A list of general algorithms and interview questions.
 * Write a multiply function that multiples 2 integers without using `*`
 * Calculate the mean, median, mode and range for a set of numbers.
 
+## TODO
+
+- Write tests for all data structures and algorithms
