@@ -8,16 +8,16 @@ Data structures and algorithms implemented using JavaScript.
 
 ## Data Structures
 
-* [Dictionary](./src/DataStructures/Dictionary/)
-* [Linked List](./src/DataStructures/LinkedList/)
-* [Queue](./src/DataStructures/Queue)
-* [Stack](./src/DataStructures/Stack)
-* [Set](./src/DataStructures/Set)
-* [Graph](./src/DataStructures/Graph)
+* [Dictionary](/src/DataStructures/Dictionary/)
+* [Linked List](/src/DataStructures/LinkedList/)
+* [Queue](/src/DataStructures/Queue)
+* [Stack](/src/DataStructures/Stack)
+* [Set](/src/DataStructures/Set)
+* [Graph](/src/DataStructures/Graph)
     * Adjacency List
     * Adjacency Matrix
 * Tree
-    * [Binary Search Tree](./tree/binarySearchTree)
+    * [Binary Search Tree](/tree/binarySearchTree)
 
 ## Algorithms
 
