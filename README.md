@@ -21,6 +21,14 @@ This repo contains succinct, straight forward descriptions of common (and not so
 
 ## Algorithms
 
+### Graphs
+
+* Breadth-First Search
+* Depth-First Search
+* Digjstra's Algorithm
+* Floyd-Warshall Algorithm
+* Prim's Algorithm
+
 ### Sorting
 * [Bubble Sort](./src/algorithms/sorting/BubbleSort)
 * [Selection Sort](./src/algorithms/sorting/SelectionSort)
