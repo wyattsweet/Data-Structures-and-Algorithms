@@ -74,7 +74,7 @@ class RomanNumeralConverter {
 
   toRomanNumeral(number) {
     const romanValues = this.getNumToRomanNums();
-    const baseValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+    const baseValues = Object.keys(romanValues).map(num => Number(num)).reverse();
     let romanNumeral = '';
     let currNum = number;
 
@@ -83,7 +83,6 @@ class RomanNumeralConverter {
         const baseValue = baseValues[i];
         if (currNum >= baseValue) {
           const [ quotient, remaining ] = this.findQuotientAndRemainder(baseValue, currNum);
-          // debugger
           romanNumeral = `${romanNumeral}${romanValues[baseValue].repeat(quotient)}`;
           currNum = remaining;
           break;
@@ -93,9 +92,5 @@ class RomanNumeralConverter {
     return romanNumeral;
   }
 }
-
-const rnc = new RomanNumeralConverter();
-console.log(rnc.toRomanNumeral(700))
-
 
 module.exports = RomanNumeralConverter;

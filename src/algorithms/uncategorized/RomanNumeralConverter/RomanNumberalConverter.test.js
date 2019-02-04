@@ -26,17 +26,25 @@ test('XXV returns 25', t => {
 
 // toRomanNumeral
 test('13 returns XIII', t => {
-  t.is(toRomanNumeral(13), 'XIII')
-})
+  t.is(toRomanNumeral(13), 'XIII');
+});
 
 test('5 returns V', t => {
   t.is(toRomanNumeral(5), 'V');
-})
+});
 
 test('2 returns II', t => {
   t.is(toRomanNumeral(2), 'II');
-})
+});
 
 test('4 returns IV', t => {
-  t.is(toRomanNumeral(4), 'IV')
-})
+  t.is(toRomanNumeral(4), 'IV');
+});
+
+test('1000 returns M', t => {
+  t.is(toRomanNumeral(1000), 'M');
+});
+
+test('789 returns DCCLXXXIX', t => {
+  t.is(toRomanNumeral(789), 'DCCLXXXIX');
+});
