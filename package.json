@@ -5,7 +5,7 @@
   "main": "BinarySearchTree.js",
   "scripts": {
     "test": "ava",
-    "test:watch": "ava --watch"
+    "test:watch": "ava --verbose --watch"
   },
   "keywords": [],
   "author": "",
