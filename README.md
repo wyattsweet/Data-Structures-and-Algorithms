@@ -45,6 +45,10 @@ Data structures and algorithms implemented using JavaScript.
 
 * [Sequential Search](./src/algorithms/searching/SequentialSearch)
 
+### Strings
+
+* [Sentence Reversal](./src/algorithms/strings/sentenceReversal)
+
 ### Uncategorized 
 
 * [FizzBuzz](./algorithms/fizzBuzz)

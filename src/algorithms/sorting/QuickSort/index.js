@@ -35,4 +35,4 @@ function quickSort(origArr) {
   return [...leftSorted, ...center, ...rightSorted];
 }
 
-console.log(quickSort([4, 6, 1, 7, 2, 3]));
+module.exports = quickSort;
