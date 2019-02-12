@@ -16,3 +16,8 @@ hi    ==> Ending index in arr[]
 Once you find the position you want to check if `arr[pos] === x` and return it if it does
 
 if `x < arr[pos]` move the right index down. If `x > arr[pos]` move the left index up
+
+###### Resources
+
+* [https://www.geeksforgeeks.org/interpolation-search/](https://www.geeksforgeeks.org/interpolation-search/)
+* [https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/search/interpolation-search](https://github.com/trekhleb/javascript-algorithms/tree/master/src/algorithms/search/interpolation-search)
