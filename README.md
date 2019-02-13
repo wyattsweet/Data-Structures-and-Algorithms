@@ -44,6 +44,7 @@ Data structures and algorithms implemented using JavaScript.
 ### Searching
 
 * [Sequential Search](./src/algorithms/searching/SequentialSearch)
+* [Interpolation Search](./src/algorithms/searching/InterpolationSearch)
 
 ### Strings
 
