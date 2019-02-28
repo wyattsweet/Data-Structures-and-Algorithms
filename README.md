@@ -21,6 +21,10 @@ Data structures and algorithms implemented using JavaScript.
 
 ## Algorithms
 
+### Math
+
+* [Euclid's Algorithm](./src/algorithms/math/euclids)
+
 ### Queue
 
 * [Queue using two stacks](./src/algorithms/queue/queueUsingTwoStacks)
